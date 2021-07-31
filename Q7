@@ -1,0 +1,49 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro codigo, opcaoSelecionada = 0
+
+		escreva("Digite o código de login: ")
+		leia(codigo)
+
+		se((codigo >= 1000) e (codigo <= 1500)){
+			escreva("Você fez login como: ADMINISTRADOR \n")
+			escreva("1 - Incluir Dados \n")			
+			escreva("2 - Excluir Dados \n")
+			escreva("3 - Alterar Dados \n")
+			escreva("4 - Consultar Dados \n")
+			
+			escreva("Digite uma das opções acima:")			
+			leia(opcaoSelecionada)
+		}senao se((codigo >= 2000) e (codigo <= 2500)){
+			escreva("Você fez login como: GERENTE \n")
+			escreva("2 - Excluir Dados \n")
+			escreva("3 - Alterar Dados \n")
+			escreva("4 - Consultar Dados \n")
+
+			escreva("Digite uma das opções acima:")			
+			leia(opcaoSelecionada)
+		}senao se(codigo == 3000){
+			escreva("Você fez login como: FUNCIONÁRIO \n")
+			escreva("4 - Consultar Dados \n")
+
+			escreva("Digite uma das opções acima:")			
+			leia(opcaoSelecionada)
+		}senao se(codigo == 4000){
+			escreva("Você fez login como: ESTAGIÁRIO \n")
+		}
+
+
+		se(opcaoSelecionada == 1){
+			escreva("Opção selecionada foi: INCLUIR DADOS")
+		}senao se(opcaoSelecionada == 2){
+			escreva("Opção selecionada foi: EXCLUIR DADOS")
+		}senao se(opcaoSelecionada == 3){
+			escreva("Opção selecionada foi: ALTERAR DADOS")
+		}senao se(opcaoSelecionada == 4){
+			escreva("Opção selecionada foi: CONSULTAR DADOS")
+		}
+	}
+}
