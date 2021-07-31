@@ -1,0 +1,26 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real IMC, peso, altura
+
+		escreva("Informe o peso: ")
+		leia(peso)
+
+		escreva("Informe a altura: ")
+		leia(altura)
+
+		IMC = peso / (altura * altura)
+
+		se(IMC < 18.5){
+			escreva("abaixo do peso")
+		}senao se((IMC > 18.5) e (IMC < 25)){
+			escreva("peso normal")
+		}senao se((IMC >= 25) e (IMC <= 30)){
+			escreva("acima do peso")
+		}senao{
+			escreva("obeso")
+		}
+	}
+}
