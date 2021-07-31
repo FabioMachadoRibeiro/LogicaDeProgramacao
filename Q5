@@ -1,0 +1,23 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia corPrimaria1, corPrimaria2
+		
+		escreva("Informe a primeira cor: ")
+		leia(corPrimaria1)
+
+		escreva("Informe a segunda cor: ")
+		leia(corPrimaria2)
+
+		se(((corPrimaria1 == "Amarelo") ou (corPrimaria2 == "Amarelo")) e (corPrimaria1 == "Vermelho") ou (corPrimaria2 == "Vermelho")){
+			escreva("Laranja")
+		}senao se(((corPrimaria1 == "Azul") ou (corPrimaria2 == "Azul")) e (corPrimaria1 == "Amarelo") ou (corPrimaria2 == "Amarelo")){
+			escreva("Verde")
+		}senao se(((corPrimaria1 == "Vermelho") ou (corPrimaria2 == "Vermelho")) e (corPrimaria1 == "Azul") ou (corPrimaria2 == "Azul")){
+			escreva("Roxo")
+		}
+
+	}
+}
