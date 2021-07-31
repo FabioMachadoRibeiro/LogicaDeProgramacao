@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro idade
+		real altura
+
+		escreva("Informe a idade: ")
+		leia(idade)
+
+		escreva("Informe a altura: ")
+		leia(altura)
+
+		se((24 <= idade) e (idade <= 45) e (altura > 1.90)){
+			escreva("Perfil ENCONTRADO")
+		}
+		
+	}
+}
