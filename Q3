@@ -1,0 +1,15 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero
+
+		escreva("Digite um número: ")
+		leia(numero)
+
+		se((numero > 5) e (numero < 9)){
+			escreva("DENTRO DO INTERVALO")
+		}
+	}
+}
