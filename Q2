@@ -1,0 +1,19 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero
+
+		escreva("Digite um número: ")
+		leia(numero)
+
+		numero += 5
+
+		se(numero > 10){
+			escreva("MAIOR")
+		}senao{
+			escreva("MENOR")
+		}
+	}
+}
